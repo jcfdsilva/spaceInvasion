@@ -1,0 +1,268 @@
+/****************
+BODY
+****************/
+body{
+    background-image: url("../_ressources/images/background-mars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    zoom: 77%;
+}
+
+#first,#second,#third{
+    width: 33%;
+    margin: 50px 20px 50px;
+}
+
+/****************
+FIRST
+****************/
+
+#first {
+    margin-top: 43px;
+}
+
+#space{
+    font-size: 15px;
+    width: 80px;
+    height: 20px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+}
+
+.partControl{
+    display: inline-flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#controle > div:nth-child(2) > img:nth-child(1),#controle > div:nth-child(3) > img:nth-child(1),#controle > div:nth-child(5) > img:nth-child(1),#controle > div:nth-child(6) > img:nth-child(1){
+    opacity: 0;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.logoMovement{
+    margin-left: 10px;
+}
+
+.instuction{
+    margin-left: 10px;
+}
+
+#pauseArea{
+    display: inline-flex;
+    align-items: center;
+}
+
+#pauseStatement{
+    margin-left: 10px;
+}
+
+.company{
+    width : 50px;
+    height : 50px;
+}
+.company:hover{
+    cursor: -webkit-grab; cursor: grab;
+}
+
+.company:active{
+        cursor: grabbing;
+        cursor: -moz-grabbing;
+        cursor: -webkit-grabbing;
+}
+
+/****************
+SECOND
+****************/
+#canvas-wrap { position:relative } /* Make this a positioned parent */
+
+#second {
+    background-image: url("../_ressources/images/background.png");
+    background-size: contain;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 850px;
+    max-height: 850px;
+}
+
+#second h2{
+    margin-left: 13px;
+    margin-top: 13px;
+}
+
+#cadrePlacement, #cadrePause, #cadrePlacementStart, #cadreEndgame{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 8px;
+    margin-left: 140px;
+    margin-top: 220px;
+    position:absolute;
+    top:20px;
+    left:30px;
+}
+
+/*,#cadrePause,#cadrePause>**/
+
+#cadrePlacement,#cadrePlacement>*,#cadrePause,#cadrePause>*,#cadreEndgame,#cadreEndgame>*{
+    display: none;
+}
+
+#cadrePlacementStart{
+    /*display: none;*/
+}
+
+
+#logoApp, #logoAppStart, #logoAppPause, #logoAppEndgame{
+    width: 100px;
+    height: 100px;
+    margin-left: 95px;
+    margin-top: 40px;
+}
+
+#imgPlayer1, #imgPlayer2{
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#startForm{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.fieldFormStart{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.fieldFormStart:nth-child(1){
+    margin-top: 30px;
+}
+
+.inputPlayers{
+    font-family: 'Press Start 2P', cursive;
+    border: black;
+    background-color: darkgrey;
+    vertical-align: 20px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    width: 160px;
+}
+
+input[type="button"]{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 75px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="button"]:active{
+    background-color: darkgreen;
+    outline: 0;
+}
+
+input[type="button"]:focus, .inputPlayers:focus{
+    outline: 0;
+}
+
+#gifAnimation{
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 850px;
+    max-height: 850px;
+    visibility: hidden;
+}
+
+.rockets{
+    width: 80px;
+    height: 100px;
+    margin-top: 210px;
+}
+
+#resultText, #resultTextPause, #resultTextEndgame{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*Rocket placé ici en dur mais ensuite placée dans un canevas pour le jeu*/
+#redrocket{
+    margin-left: 100px;
+}
+
+#bluerocket{
+    margin-left: 210px;
+}
+
+#buttonSkip a h2{
+    position: absolute;
+    font-size: 10px;
+    padding: 10px 10px;
+    margin-top: 70px;
+    margin-left: 435px;
+}
+
+#buttonSkip{
+    display : none;
+}
+
+/****************
+THIRD
+****************/
+
+#third {
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+}
+
+#palmares{
+    flex-direction: column;
+}
+
+.player{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.buttonLink a h2{
+    margin-top: 50px;
+    align-self: flex-end;
+    border-color: white;
+    border-style: solid;
+    padding: 25px 25px;
+    width: max-content;
+    color: white;
+}
+
+.buttonLink a{
+    text-decoration: none;
+}
+
+.buttonLink a h2:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonLink a h2:active{
+    background-color: rgba(255, 255, 255, 0.7);
+}
