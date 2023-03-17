@@ -6,6 +6,7 @@
 ## Example of full screen
 - Drag and drop the logo of your space agency
 - Choose a 3 letter name
+![alt text](https://github.com/jcfdsilva/spaceInvasion/blob/master/_captures/full.PNG?raw=true)
 
 ## Game introduction
 - Watch or skip the intro
